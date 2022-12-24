@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*progress bar*/
+.progress {
+    background-color: #2874f0;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+    -webkit-animation: load 1s ease-in-out 1;
+ }
+ @keyframes load {
+    0% {
+        width: 0;
+    }
+ 
+    50% {
+        width: 90vw;
+    }
+ 
+    100% {
+        width: 100vw;
+    }
+ }
+
+      body {
+        background: url(https://wallpapercave.com/wp/Yy1rcP0.jpg) no-repeat
+          center center fixed;
+
+        background-size: cover;
+      }
+      .forgot {
+        width: 450px;
+        height: 600px;
+        background: #242333;
+        color: greenyellow;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+
+      h1 {
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .forgot p {
+        margin: 0 0 4px 0;
+        padding: 0 0 2px 0;
+        font-weight: bold;
+        color: gray;
+        font-size: 20px;
+      }
+
+      .forgot input[type="submit"] {
+        margin-top: 25px;
+        background-color: rgb(69, 23, 148);
+        height: 35px;
+        color: antiquewhite;
+        width: 100%;
+        font-size: 20px;
+      }
+
+      .forgot input[type="text"],
+      input[type="number"],
+      input[type="password"] {
+        height: 30px;
+        width: 100%;
+        border: 2px solid greenyellow;
+        border-radius: 30px;
+        background: transparent;
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #btn {
+        border: 2px solid greenyellow;
+        color: greenyellow;
+        background-color: #242333;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: auto;
+        padding: 10px;
+      }
+      .inp:hover {
+        background-color: greenyellow;
+        color: black;
+        border: 2px solid green;
+      }
+      #inpu:hover {
+        background-color: greenyellow;
+        color: black;
+        border: 2px solid green;
+      }
+      #btn:hover {
+        background-color: greenyellow;
+        color: black;
+        border: 2px solid green;
+      }
+     
+    </style>
+  </head>
+  <body>
+      <div class="progress"></div>
+    <div class="forgot">
+      <h1>Reset Password</h1>
+      <form>
+        <p>Phone or Email address</p>
+        <input
+          type="text"
+          id="inpu"
+          name=""
+          placeholder="Enter phone number or email address"
+          class="inp"
+        />
+        <p>OTP</p>
+        <input type="number" name="" placeholder="Enter OTP" class="inp" />
+        <p>New password</p>
+        <input
+          type="password"
+          name=""
+          placeholder="Enter new password "
+          class="inp"
+        />
+        <p>Confirm new password</p>
+        <input
+          type="password"
+          name=""
+          placeholder="Confirm password"
+          class="inp"
+        /><br />
+        <a href="#"><button id="btn" onclick="validate()">Update Password</button></a><br>
+       
+      </form>
+    </div>
+    <script>
+        function validate(){
+            window.alert('Your password is updated successfully..');
+        }
+         </script>
+  </body>
+</html>

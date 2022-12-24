@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration Form</title>
+
+<link rel="stylesheet" type="text/css" href="./registration.css">
+
+</head>
+
+<!-- <p> I Agree Terms & Conditions.</p> -->
+         <!-- <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" class="inp"> -->
+<body>
+    <div class="progress"></div>
+    <form class="frm">
+  
+    <div class="registration-form"><h1>Register</h1>
+
+        <p>Full Name:</p>
+        
+        <input type="text" name="full_name" placeholder="Full Name" class="inp">
+        
+        
+        <p>Email id/phone: </p><input type="email/phone" name="email/phone" placeholder="Email contain @gmail.com" class="inp">
+        
+        <p>Password:</p><input type="password" name="password" placeholder="password" class="inp">
+        
+        <p>Confirm Password:</p><input type="text" name="Confirm Password" placeholder="Confirm Password" class="inp"><br>
+       
+        <label for="agree">I have Agree all Terms & Conditions</label> <input type="checkbox" id="agree" name="agree" value="agree">
+
+          
+      
+        <br>
+        <button type="submit" onclick="validate()">Register</button>
+        
+        <a href="Login.html" style="color: rgb(33, 199,47);"><h4>Already have an account? Login</h4></a><br><br><br>
+        <section class="img">
+            <div class="img">
+                <img class="img" src="./tickket_2.png" alt="ticket">
+            </div>
+        </section>
+  
+</form>
+</div>
+<script>
+    function validate(){
+        window.alert("You are now register..");
+    }
+</script>
+</body>
+</html>

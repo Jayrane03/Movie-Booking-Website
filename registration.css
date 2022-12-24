@@ -1,0 +1,141 @@
+*
+{
+padding: 0;
+margin: 0;
+
+font-family: sans-serif;
+}
+/*progress bar*/
+.progress {
+    background-color: #2874f0;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+    -webkit-animation: load 1s ease-in-out 1;
+ }
+ @keyframes load {
+    0% {
+        width: 0;
+    }
+ 
+    50% {
+        width: 90vw;
+    }
+ 
+    100% {
+        width: 100vw;
+    }
+ }
+body {
+
+    
+        background: url(https://wallpapercave.com/wp/Yy1rcP0.jpg) no-repeat center center fixed;
+        
+        background-size: cover;
+     
+margin:auto;
+ background-size: 100% 100%;
+color: rgb(33, 199, 47);
+justify-content: center;
+align-items: center;
+ }
+
+ /* .registration-form {
+position: absolute;
+background-color: #242333;
+top: 50%;
+left: 50%;
+margin: 20px;
+padding: 70px;
+transform: translate(-50%, -50%);
+border: 2px  solid greenyellow;
+width: 50vw;
+height: 100vh;
+box-sizing: border-box;
+ }
+  */
+.registration-form{
+    width: 700px;
+    height: 850px;
+    background: #242333;
+    color: greenyellow;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 81px 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+ .registration-form h1 {
+     font-size: 40px;
+     text-align: center;
+     text-transform: uppercase;
+     margin: 40px ;
+     padding-top: 10px ;
+ }
+
+ .registration-form p {
+    font-size: 20px;
+    margin: 15px 0;
+ }
+ p:hover{
+     color: black;
+ }
+ h1:hover , h4:hover{
+     color: black;
+ }
+ 
+ 
+
+ .registration-form input {
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    outline: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+ .registration-form button{
+     font-size: 18px;
+     font-weight: bold;
+     margin: 20px 0;
+     padding: 10px 15px;
+     width: 50%;
+     border: 2px solid black;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .registration-form button:hover{
+     background-color: greenyellow;
+     
+ }
+ .inp:hover{
+     background-color: greenyellow;
+     color: black;
+
+ }
+ 
+    .img{
+        display: flex;
+        height: 180px;
+        width: 220px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+ #terms{
+     margin: 2px;
+     cursor: pointer;
+    
+ }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bokking.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="progress"></div>
+    <div class="theatre-container"></div>
+    <label> Select a theatre: </label>
+    <select  id= "theatre">
+    <option address> Plaza theatre (dadar)</option>
+    <option address> Jai hind (lalbagh)</option>
+    <option address> PVR (Andheri)</option>
+    <option address> Phoenix  parel</option>
+    <option address> Gold Cinema (Santacruz) </option>
+    <option address> Carnival imax </option>
+    <option address> Cinepolis Thane</option>
+    <option address> INOX Malad </option>
+    <option address> Miraj cinemas (Panvel)</option>
+    <option address> Bharat Cineplex (Kurla W)</option>
+
+    </select>
+    </div>
+    
+    
+  <body>
+    <div class="movie-container">
+      <label> Select a movie:</label>
+      <select id="movie">
+        <option value="300">Pushpa (RS.300)</option>
+        <option value="720">Spider man- no way home [4D] (RS.720)</option>
+        <option value="250">RRR (RS.250)</option>
+        <option value="260"> 83 [3D] (RS.260)</option>
+        <option value="350"> Jersey (rs.350)</option>
+        <option value="150"> Zombivali (rs.150)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+  
+        <div class="row">
+        <div class="seat sold"></div> 
+        <div class="seat"></div>
+         <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+         <div class="seat sold"></div> 
+        <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat sold"></div> 
+          <div class="seat"></div>
+           <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+           <div class="seat"></div> 
+          <div class="seat"></div>
+          </div>
+  
+        
+ </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <div class="btn"><button onclick="validate()">BOOK</button></div>
+    <script src="bokking.js"></script>
+
+</body>
+</html>

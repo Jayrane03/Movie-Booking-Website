@@ -1,0 +1,136 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+/*progress bar*/
+.progress {
+   background-color: #2874f0;
+   height: 3px;
+   animation: load 1s ease-in-out 1;
+   -webkit-animation: load 1s ease-in-out 1;
+}
+@keyframes load {
+   0% {
+       width: 0;
+   }
+
+   50% {
+       width: 90vw;
+   }
+
+   100% {
+       width: 100vw;
+   }
+}
+
+
+body{
+   background: url(https://wallpapercave.com/wp/Yy1rcP0.jpg) no-repeat center center fixed;
+   
+   background-size: cover;
+}
+.inp:hover{
+   background-color: greenyellow;
+   border: 2px solid black;
+
+}
+#inpu:hover{
+   background-color: greenyellow;
+   color: #242333;
+   border: 2px solid black;
+
+}
+#in:hover{
+   background-color: greenyellow;
+   border: 2px solid black;
+
+}
+#inpu{
+   background-color: lightseagreen;
+   cursor: pointer;
+   color: #242333;
+   border: 2px solid greenyellow;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+}
+
+
+
+.loginbox{
+   width: 380px;
+   height: 450px;
+   background:#242333;
+   color: greenyellow;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   box-sizing: border-box;
+   padding: 70px 30px;
+   border:2px solid black;
+   border-radius: 20px;
+   
+}
+.logo{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% - 50px);
+
+}
+
+h1{ 
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.loginbox p{
+
+font-weight: bold;
+color: grey;
+font-size: 22px;
+}
+   
+.loginbox input{
+   margin-top: 10px;
+   
+   height: 30px;
+   color:antiquewhite ;
+   width: 100%;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 20px;
+
+}
+
+.loginbox input[type="text"],input[ type="password"]
+{
+ border: 2px solid greenyellow ;
+ border-radius: 30px;
+ background:transparent;
+ outline: none;
+ height: 30px;
+ color: rgb(29, 27, 27);
+ font-size: 17px;
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ -ms-border-radius: 30px;
+ -o-border-radius: 30px;
+}
+ 
+div{
+  margin-top: 10px;
+}
+ 
+a{
+   color: greenyellow;
+}
+ 
+
